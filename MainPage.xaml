@@ -72,6 +72,33 @@
 
             </VerticalStackLayout>
 
+            <Grid Grid.Row="1"
+                  Margin="0,15,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".3*"/>
+                    <ColumnDefinition Width=".7*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label
+                    Text="Enter your bill: $"
+                    TextColor="{StaticResource LightFont}"
+                    VerticalOptions="Center"/>
+                <Entry
+                    x:Name="txtBill"
+                    Grid.Column="1"
+                    BackgroundColor="{StaticResource SectionsColor}"
+                    Keyboard="Numeric"
+                    Text="0.0"
+                    TextColor="{StaticResource LightFont}"
+                    VerticalOptions="Center"/>
+
+            </Grid>
+
         </Grid>
 
 
